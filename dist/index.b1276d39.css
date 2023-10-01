@@ -1,0 +1,230 @@
+*, :before, :after {
+  box-sizing: border-box;
+}
+
+body, h1, h2, h3, h4, p, figure, blockquote, dl, dd {
+  margin: 0;
+}
+
+ul[role="list"], ol[role="list"] {
+  list-style: none;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+body {
+  text-rendering: optimizespeed;
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+img, picture {
+  max-width: 100%;
+  display: block;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *, :before, :after {
+    scroll-behavior: auto !important;
+    transition-duration: .01ms !important;
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}
+
+:root {
+  --color-cyan: #2ab2af;
+  --color-light-cyan: #2cbab8;
+  --color-bright-yellow: #c0df34;
+  --color-light-gray: #e5eff5;
+  --color-dark-grey: #e5eff580;
+  --color-grayish-blue: #98a6bd;
+  --color-white: #fff;
+}
+
+del, s {
+  text-decoration: line-through;
+}
+
+mark:before, mark:after, del:before, del:after, ins:before, ins:after, s:before, s:after {
+  clip-path: inset(100%);
+  clip: rect(1px, 1px, 1px, 1px);
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  position: absolute;
+  overflow: hidden;
+}
+
+s:before {
+  content: " [strike-through start] ";
+}
+
+s:after {
+  content: " [strike-through end] ";
+}
+
+body {
+  background-color: var(--color-light-gray);
+  place-content: center;
+  height: 100%;
+  padding: .625rem;
+  font-family: Karla, sans-serif;
+  font-size: 1rem;
+  display: grid;
+}
+
+.c-product-card {
+  background-color: var(--color-light-gray);
+  border-radius: 7px;
+  flex-direction: column;
+  max-width: 20rem;
+  display: flex;
+  overflow: hidden;
+}
+
+.c-product-card-container {
+  padding: 1.875rem 1.25rem;
+}
+
+.c-product-card-indv-1 {
+  background-color: var(--color-white);
+  flex-direction: column;
+  gap: 2ch;
+  display: flex;
+}
+
+.c-product-card__secondary-title {
+  color: var(--color-cyan);
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.c-product-card__sub-heading {
+  color: var(--color-bright-yellow);
+  font-size: .9375rem;
+  font-weight: 700;
+}
+
+.c-product-card__desc {
+  color: var(--color-grayish-blue);
+  font-size: .875rem;
+}
+
+.c-product-card-indv-2 {
+  background-color: var(--color-cyan);
+  flex-direction: column;
+  gap: 2ch;
+  display: flex;
+}
+
+.c-product-card__tertiary-title {
+  color: var(--color-white);
+  font-size: 1.125rem;
+}
+
+.c-product-card-indv-2__price-container {
+  align-items: center;
+  gap: 1ch;
+  display: flex;
+}
+
+.c-product-card-indv-2__price {
+  color: var(--color-white);
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.c-product-card-indv-2__price-month {
+  color: var(--color-dark-grey);
+}
+
+.c-product-card-indv-2 p {
+  color: var(--color-white);
+}
+
+.c-product-card-indv-2 a {
+  margin-top: .625rem;
+}
+
+.c-product-card-indv-3 {
+  background-color: var(--color-light-cyan);
+  flex-direction: column;
+  gap: 2ch;
+  display: flex;
+}
+
+.desc-indv-2--color {
+  color: var(--color-light-gray);
+}
+
+.c-product-card-indv-3 p {
+  padding: 0 3.75rem 0 0;
+}
+
+@media (width >= 43.75em) {
+  .c-product-card {
+    max-width: 43.75rem;
+  }
+
+  .c-product-card-container {
+    padding: 2.1875rem 2.5rem;
+  }
+
+  .c-product-card__secondary-title {
+    font-size: 1.5rem;
+  }
+
+  .c-product-card__sub-heading {
+    font-size: 1.125rem;
+  }
+
+  .c-product-card__desc {
+    margin-bottom: .625rem;
+    padding: 0 3.125rem 0 0;
+    font-size: 1rem;
+  }
+
+  .c-product-card-wrapper {
+    grid-template-columns: 1fr 1fr;
+    display: grid;
+  }
+
+  .c-product-card-indv-3 p {
+    padding: 0 2.8125rem 0 0;
+  }
+}
+
+.btn {
+  color: var(--color-white);
+  text-align: center;
+  background-color: var(--color-bright-yellow);
+  border-radius: 7px;
+  padding: .75rem;
+  font-weight: 700;
+  text-decoration: none;
+  display: inline-block;
+  box-shadow: -1px 18px 33px #00000026;
+}
+
+@media (width >= 43.75em) {
+  .btn {
+    padding: 1rem;
+  }
+}
+
+/*# sourceMappingURL=index.b1276d39.css.map */

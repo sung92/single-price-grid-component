@@ -1,0 +1,15 @@
+{
+  "name": "single-price-grid-component-master",
+  "version": "1.0.0",
+  "description": "![Design preview for the Single price grid component coding challenge](./design/desktop-preview.jpg)",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "author": "Sung Jin Cho",
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.9.3",
+    "parcel": "^2.9.3"
+  }
+}

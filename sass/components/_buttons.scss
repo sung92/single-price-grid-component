@@ -1,0 +1,24 @@
+@use "../abstracts/functions" as f;
+
+/**************************/
+/* BUTTONS */
+/**************************/
+
+.btn {
+    font-weight: 700;
+    color: var(--color-white);
+    text-align: center;
+    text-decoration: none;
+    border-radius: 7px;
+    background-color: var(--color-bright-yellow);
+
+    display: inline-block;
+    padding: f.rem(12px);
+    box-shadow: -1px 18px 33px 0px rgba(0,0,0,0.15);
+}
+
+@media (width >= 43.75em) {
+    .btn {
+        padding: f.rem(16px);
+    }
+}

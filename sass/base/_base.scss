@@ -1,0 +1,42 @@
+@use "../abstracts/functions" as f;
+@use "../abstracts/colors";
+
+/**************************/
+/* Tweaking Text Level Styles: strike-through */
+/**************************/
+
+del, s {
+  text-decoration: line-through;
+}
+
+mark::before, mark::after, del::before, del::after, ins::before, ins::after, s::before, s::after {
+  clip-path: inset(100%);
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+}
+
+s::before {
+  content: ' [strike-through start] ';
+}
+s::after {
+  content: ' [strike-through end] ';
+}
+
+/**************************/
+/* Body */
+/**************************/
+
+body {
+    padding: f.rem(10px);
+    font-size: f.rem(16px);
+    font-family: 'Karla', sans-serif;
+    background-color: var(--color-light-gray);
+    height: 100%;
+    
+    display: grid;
+    place-content: center;
+}
